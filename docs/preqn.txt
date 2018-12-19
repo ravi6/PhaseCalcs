@@ -1,0 +1,30 @@
+p = RT/(V-b) - a / ( V(V+b) + b(V-b) )
+VD = V(V+b) + b(V-b) = V^2 + 2bV - b^2
+p*VD*(V-b) = RT*VD - a * (V-b) 
+VD*(pV-pb-RT) + a(V-b) = 0
+(V^2 + 2Vb -b^2)*(pV-pb-RT) + a(V-b) = 0
+pV^3 + V^2(-pb-RT+2pb) + V(-2b*(pb+RT) -b^2p + a ) + (-ab+b^2(pb+RT)) = 0
+V^3 + (b-RT/p)V^2 + (-3b^2 - 2RTb/p) + a/p)V + (-ab/p + b^3 + b^2RT/p)) = 0
+C1 = 1
+C2 = b-RT/p
+C3 = -b * (2RT/p + 3b) + a/p
+C4 = b * (b^2 + bRT/p - a/p)
+
+   beta = RT/p
+ [1  b-beta   -b*(2beta + 3b) + a/p  b(b^2 +b*beta)] 
+
+
+scale   V with    V' = V / (RT/P)   V' is dimensionless
+                                    Dummy this is Z
+                  b' = b / (RT/P)  ;  a' = a p/(RT)^2 
+From now all are primes by default
+
+V^3 + C2/(RT/P)*V^2 + C3/(RT/P)^2 * V + C4/(RT/P)^3 = 0
+C1' = 1
+C2' = b' - 1 ;
+C3' = -b' * (2 + 3b') + a'
+C4' = b' * (b'^2 + b' - a')
+ 
+ 
+
+

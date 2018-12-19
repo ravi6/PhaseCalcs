@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <link rel="stylesheet" href="sunny.css">
+  <link href="peng.css" rel="stylesheet" type="text/css">
+  <title>PhaseEnvelope</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js> </script>
+<script src="peng.js"></script>
+
+<body> 
+<h1>Phase Envelope Calculator</h1>
+<table id=myTable>
+<h3>LNG Molar Gas Compositon</h3>
+  <tr> <th>Name</th> <th>Mole%</th> </tr>
+  <tr> <td>Methane (CH4)</td> <td><input class=yi type=text ></td> </tr>
+  <tr> <td>Ethane (C2H6)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>Propane (C3H8)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>Butane (C4H10)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>Pentane (C5H12)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>Hexane (C6H14)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>isoButane (iC4H10)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>isoPentane (iC5H12)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>CarbonDioxide (CO2)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>Nitrogen (N2)</td> <td><input class=yi type=text></td> </tr>
+  <tr> <td>Sum</td> <td><span id=sumy>...</span></td> </tr>
+</table>
+<img class=box id=aplot src=peng.jpg  />
+<div>
+<div>
+<label>Bub Curve Max.P (bar)</label><input id=bPmax type=text>
+</div>
+<div>
+<label>Dew Curve Max P (bar)</label><input id=dPmax type=text>
+</div>
+<button id=calc>Calculate</button> 
+</div>
+<a id=rlink href="http://localhost:8000/peng.txt">
+	Follow this link to see output data</a>
+
+</body>
+<script>
+
+</script>
+</html>
